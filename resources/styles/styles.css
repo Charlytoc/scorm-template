@@ -61,19 +61,36 @@ p {
   overflow-x: auto;
 }
 
-.list {
-  list-style-type: decimal;
-  padding-left: 20px;
-}
+
 
 .list-item {
   margin: 15px 0;
   color: #555;
 }
-
+pre {
+  background-color: #2d3748;
+  padding: 10px;
+  border-left: 2px solid #1986da;
+  border-radius: 5px;
+  overflow: auto;
+}
 code {
-  background-color: #f1f1f1;
-  padding: 2px 4px;
-  border-radius: 4px;
+  color: white;
+  background-color: #2d3748;
+}
+code:not(pre code) {
+  border-left: 2px solid #1986da;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+blockquote {
+  border-left: 2px solid var(--color-active);
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #d2d2d2;
 }
 
+li {
+  list-style-position: inside;
+}
