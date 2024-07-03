@@ -13,9 +13,9 @@
   </metadata>
   <organizations default="four_geeks_academy_org">
     <organization identifier="four_geeks_academy_org">
-      <title>Learning Flask Interactive</title>
+      <title>Prompt Engineering Course</title>
       <item identifier="item_1" identifierref="resource">
-        <title>Learning Flask</title>
+        <title>Prompt Engineering</title>
       </item>
     </organization>
   </organizations>
