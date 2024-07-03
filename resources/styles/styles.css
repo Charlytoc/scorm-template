@@ -4,6 +4,8 @@ body {
   margin: 0;
   padding: 0;
   color: #1e1e1e;
+  display: flex;
+
 }
 * {
   font-family: "Inter", sans-serif;
@@ -12,12 +14,13 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  width: min(800px, 100%);
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   padding-top: 80px;
+  overflow-x: auto;
 }
 
 h1 {
@@ -44,29 +47,10 @@ p {
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 1em;
+  word-break: break-all;
 }
 
 
-
-
-
-
-.code-block {
-  background-color: #f8f9fa;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 16px;
-  margin: 20px 0;
-  font-family: 'Courier New', Courier, monospace;
-  overflow-x: auto;
-}
-
-
-
-.list-item {
-  margin: 15px 0;
-  color: #555;
-}
 pre {
   background-color: #2d3748;
   padding: 10px;
@@ -93,4 +77,20 @@ blockquote {
 
 li {
   list-style-position: inside;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: #2d3748;
+  padding: 6px;
+  color: white;
+  border: 1px solid rgb(130, 130, 130);
+}
+td {
+  border: 1px solid rgb(130, 130, 130);
+  text-align: center;
+  padding: 4px;
 }
