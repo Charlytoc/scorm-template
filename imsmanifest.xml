@@ -54,6 +54,7 @@
       <file href="config/index.html" />
       <file href="config/api.js" />
       <file href="resources/styles/styles.css" />
+      <file href="resources/assets/logo.png" />
     </resource>
   </resources>
 </manifest>

@@ -38,7 +38,7 @@ async function convertMarkdownToHTML(inputDir, outputDir) {
       const inputFilePath = path.join(inputDir, file.name);
       const outputFilePath = path.join(outputDir, file.name.replace('.md', '.html'));
 
-      if (file.isDirectory()) {
+      if (file.isDirectory() && !file.name.includes("pycache")) {
         await mkdir(outputFilePath, { recursive: true });
         await convertMarkdownToHTML(inputFilePath, outputFilePath);
       } else if (file.isFile() && file.name.endsWith('.md')) {
@@ -112,6 +112,7 @@ async function generateIMSManifest(outputDir) {
       <file href="config/index.html" />
       <file href="config/api.js" />
       <file href="resources/styles/styles.css" />
+      <file href="resources/assets/logo.png" />
     </resource>
   </resources>
 </manifest>`;

@@ -5,7 +5,7 @@ body {
   padding: 0;
   color: #1e1e1e;
   display: flex;
-
+  font-size: 14px;
 }
 * {
   font-family: "Inter", sans-serif;
@@ -25,13 +25,13 @@ body {
 
 h1 {
   color: #333;
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
 h2 {
   /* color: #828282; */
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 0.5em;
   text-align: left;
 }
@@ -39,7 +39,7 @@ h2 {
 h3,
 h4 {
   /* color: #2850a7; */
-  font-size: 1.75em;
+  font-size: 1.6em;
   margin-bottom: 0.5em;
 }
 
@@ -94,3 +94,5 @@ td {
   text-align: center;
   padding: 4px;
 }
+
+

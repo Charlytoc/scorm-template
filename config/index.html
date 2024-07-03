@@ -271,6 +271,10 @@
         }
     </script>
     <style>
+        * {
+            font-family: "Inter", sans-serif;
+        }
+
         div#navDiv {
             position: fixed;
             top: 0;
@@ -284,33 +288,52 @@
             align-items: center;
         }
 
+        div#navDiv>img {
+            width: 40px;
+        }
+
         div#navDiv input[type="button"] {
-            background-color: #fff;
-            /* color: #007bff; */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
+            background-color: transparent;
+            color: #1986da;
+            border: 1px solid #1986da;
+            padding: 4px 8px;
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         div#navDiv input[type="button"]:hover {
             background-color: #e0e0e0;
+
+        }
+        div#navDiv input[type="button"]:disabled {
+
+            color: rgb(42, 42, 42);
+            background-color: #d6d6d6a2;
+            border: 0;
+            cursor: not-allowed;
         }
 
         div#navDiv select {
-            padding: 10px;
+            padding: 5px 10px;
             border-radius: 4px;
             border: 0;
             cursor: pointer;
+            background-color: transparent;
+
+        }
+
+        div#navDiv select:active,
+        div#navDiv select:focus {
+            border: 0;
+            outline: 0;
         }
     </style>
 </head>
 
-<body onload="doStart(false);" onbeforeunload="doUnload(false);" onunload="doUnload();">
-    <iframe width="100%" id="contentFrame" src=""></iframe>
-
+<body onload="doStart();" onbeforeunload="doUnload(false);" onunload="doUnload();">
     <div id="navDiv">
+        <img src="/resources/assets/logo.png" alt="Learnpack logo" />
         <input type="button" value="<- Previous" id="butPrevious" onclick="doPrevious();" />
         <input type="button" value="Next ->" id="butNext" onclick="doNext();" />
         <input type="button" value="Exit" id="butExit" onclick="doExit();" />
@@ -319,6 +342,8 @@
             <option value="en">English</option>
         </select>
     </div>
+    <iframe width="100%" id="contentFrame" src=""></iframe>
+
 </body>
 
 </html>
