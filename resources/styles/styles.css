@@ -1,64 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: snow;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+}
+* {
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  border: 2px solid grey;
-  display: grid;
-  place-content: center;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(250, 234, 234);
+  background-color: #fff;
   border-radius: 8px;
+  padding-top: 80px;
 }
 
 h1 {
-  color: #279940;
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  color: #007bff;
+  /* color: #828282; */
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: left;
 }
 
 h3,
 h4 {
-  color: #35af31d5;
+  /* color: #2850a7; */
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
 }
 
 p {
-  font-size: 14px;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
-.flask-img {
-  display: block;
-  margin: 20px auto;
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-}
 
-@media screen and (max-width: 768px) {
-  .flask-img {
-    max-width: 400px;
-  }
-}
 
-@media screen and (max-width: 576px) {
-  .flask-img {
-    max-width: 300px;
-  }
-}
+
+
 
 .code-block {
   background-color: #f8f9fa;
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 8px;
-  margin: 10px;
+  padding: 16px;
+  margin: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
 }
 
 .list {
@@ -67,10 +67,13 @@ p {
 }
 
 .list-item {
-  margin: 15px;
-  color: #777;
+  margin: 15px 0;
+  color: #555;
 }
 
 code {
-  margin: 25px;
+  background-color: #f1f1f1;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
+

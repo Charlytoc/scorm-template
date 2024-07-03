@@ -1,0 +1,15 @@
+{
+  "name": "scorm",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de demostración que presenta el producto mínimo viable (MVP) para un proyecto de eLearning SCORM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  }
+}

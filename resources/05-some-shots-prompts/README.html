@@ -1,0 +1,72 @@
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>
+	<title>README</title>
+	<style type="text/css" media="screen">
+		@import url(../styles/styles.css);
+	</style>
+	<script src="/config/api.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>What are &quot;Shots&quot; in Prompt Creation? 🎬</h1>
+<p>In the context of AI and machine learning, &quot;shots&quot; refer to the number of examples provided to the model to help it understand the task. Let's break down the different types:</p>
+<h4>Zero-Shot Prompting</h4>
+<p>Zero-shot prompting means giving the AI a task without any example. The AI has to rely solely on its pre-existing knowledge and instructions to generate a response.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-text">Generate a JSON object that represents a user
+</code></pre>
+<h4>One-Shot Prompting</h4>
+<p>One-shot prompting involves providing the AI with one example to help it better understand the task.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-text">Generate a JSON object that represents a user
+Example: &quot;&quot;&quot;
+{
+    &quot;name&quot;: &quot;John Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;email&quot;: &quot;john.doe@example.com&quot;
+}
+&quot;&quot;&quot;
+</code></pre>
+<blockquote>
+<p><strong>Hint:</strong> Remember to use delimiters 👀.</p>
+</blockquote>
+<h4>Few-Shot Prompting</h4>
+<p>Few-shot prompting means giving the AI a few examples to improve its understanding of the task.</p>
+<blockquote>
+<p>Note: Generally, for large language models, it is not necessary to give many examples to understand a pattern; usually, 2 or 3 examples are sufficient depending on the complexity of the task.</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<pre><code class="language-text">Generate a movie dialogue for a romantic comedy. There are two characters, Alice and Robert, who are childhood friends and fall in love.
+
+Examples:
+&lt;Alice&gt;: I've always had a crush on you, Robert.
+&lt;Robert&gt;: I never knew, Alice. I feel the same way.
+
+The scene ends with them holding hands and looking into each other's eyes.
+</code></pre>
+<h4>Many-Shot Prompting</h4>
+<p>Many-shot prompting involves providing the AI with many examples. This is often used when the task is complex and requires more context and examples to be understood.</p>
+<h3>Why Examples Help 🧩</h3>
+<p>Providing examples in prompts can significantly improve the performance of the AI. Here are some reasons why:</p>
+<ol>
+<li><strong>Contextual Understanding:</strong> Examples give the AI a better understanding of the task by providing context.</li>
+<li><strong>Pattern Recognition:</strong> The AI can recognize patterns in the examples and apply them to generate more accurate responses.</li>
+<li><strong>Reduction of Ambiguity:</strong> Examples help reduce ambiguity, making it easier for the AI to understand what is expected.</li>
+</ol>
+<h2>TIPS 🤖</h2>
+<ol>
+<li>Experiment with different types of prompts (zero-shot, one-shot, few-shot, and many-shot) using the provided examples.</li>
+<li>Observe how the AI's responses change with the number of examples given.</li>
+<li>Try creating your own prompts for different tasks and see how providing examples affects the output.</li>
+</ol>
+<p>Let's put into practice what you've learned about &quot;shots&quot; in prompt creation! 🚀</p>
+
+	</div>
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 <?xml version="1.0" standalone="no"?>
-
 <manifest identifier="com.scorm.golfsamples.runtime.basicruntime.12" version="1"
   xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
   xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
@@ -23,13 +22,38 @@
   <resources>
     <resource identifier="resource" type="webcontent" adlcp:scormtype="sco"
       href="config/index.html">
-      <file href="resources/01-install-flask/install.html" />
-      <file href="resources/01-install-flask/install.png" />
-      <file href="resources/02-your-first-endpoint/endpoint.html" />
-      <file href="resources/02-your-first-endpoint/endpoint.png" />
-      <file href="resources/styles/styles.css" />
+      <file href="resources\00-welcome\README.es.html" />
+<file href="resources\00-welcome\README.html" />
+<file href="resources\00.1-brieftly-understand-generative-ai\README.es.html" />
+<file href="resources\00.1-brieftly-understand-generative-ai\README.html" />
+<file href="resources\01-what-is-prompting\README.es.html" />
+<file href="resources\01-what-is-prompting\README.html" />
+<file href="resources\01.1-obtain-api-key\README.es.html" />
+<file href="resources\01.1-obtain-api-key\README.html" />
+<file href="resources\02-write-your-first-prompt-\README.es.html" />
+<file href="resources\02-write-your-first-prompt-\README.html" />
+<file href="resources\02.1-importance-of-detailed-instructions\README.es.html" />
+<file href="resources\02.1-importance-of-detailed-instructions\README.html" />
+<file href="resources\03-acting-as-an-expert\README.es.html" />
+<file href="resources\03-acting-as-an-expert\README.html" />
+<file href="resources\03.1-patient-story\README.es.html" />
+<file href="resources\03.1-patient-story\README.html" />
+<file href="resources\04-delimiters-and-how-to-avoid-missunderstanding\README.es.html" />
+<file href="resources\04-delimiters-and-how-to-avoid-missunderstanding\README.html" />
+<file href="resources\04.1-fix-the-failing-translation-prompt\README.es.html" />
+<file href="resources\04.1-fix-the-failing-translation-prompt\README.html" />
+<file href="resources\05-some-shots-prompts\README.es.html" />
+<file href="resources\05-some-shots-prompts\README.html" />
+<file href="resources\05.1-obtaining-a-correct-list-of-products\README.es.html" />
+<file href="resources\05.1-obtaining-a-correct-list-of-products\README.html" />
+<file href="resources\06-what-is-context-in-prompting\README.es.html" />
+<file href="resources\06-what-is-context-in-prompting\README.html" />
+<file href="resources\06.1-google-algorithm-leak\README.es.html" />
+<file href="resources\06.1-google-algorithm-leak\README.html" />
+
       <file href="config/index.html" />
       <file href="config/api.js" />
+      <file href="resources/styles/styles.css" />
     </resource>
   </resources>
 </manifest>

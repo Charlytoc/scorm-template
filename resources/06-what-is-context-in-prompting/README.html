@@ -1,0 +1,49 @@
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>
+	<title>README</title>
+	<style type="text/css" media="screen">
+		@import url(../styles/styles.css);
+	</style>
+	<script src="/config/api.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h3>About Context and Hallucinations 🧠</h3>
+<p>The importance of context in prompt creation is undeniable. In this lesson, we will explore what context is, how to provide enough context to obtain accurate and relevant outputs from the AI, and how to avoid <strong>hallucinations</strong>.</p>
+<h3>Understanding Context in Prompt Creation 📚</h3>
+<p>Context is crucial when interacting with AI models. It helps the AI understand the background and specific details of your request, leading to more accurate and relevant responses.</p>
+<p>If you do not provide enough context, the AI might generate irrelevant or incorrect information, which can also lead to hallucinations where the AI generates information that is not accurate or relevant.</p>
+<h3>What are Hallucinations? 😵‍💫</h3>
+<p>A hallucination occurs when the AI generates information that is not true because it does not have enough context or the training data does not include the specific information you are requesting.</p>
+<h4>Bad Prompt:</h4>
+<pre><code class="language-text">What was the magnitude of the earthquake that occurred on April 3, 2024, in Taiwan? How many people were injured?
+</code></pre>
+<p>This prompt lacks context and could lead to inaccurate or irrelevant responses because the training data might not include this specific event.</p>
+<h4>Good Prompt:</h4>
+<pre><code class="language-text">What was the magnitude of the earthquake that occurred on April 3, 2024, in Taiwan? How many people were injured?
+
+Context from Wikipedia: On April 3, 2024, at 07:58:11 NST (23:58:11 UTC on April 2), a magnitude 7.4 earthquake struck 15 km (9.3 mi) south of Hualien City, Hualien County, Taiwan. At least 18 people died and more than 1,100 were injured in the earthquake. It is the strongest earthquake in Taiwan since the Jiji earthquake in 1999, with three aftershocks above magnitude 6.0.
+</code></pre>
+<p>In this prompt, we provide enough context about the earthquake in Taiwan, which will make the generated response not a hallucination.</p>
+<h4>Example of hallucination for the first prompt:</h4>
+<pre><code class="language-text">The magnitude of the earthquake was 7.5 on the Richter scale and around 500 people were injured.
+</code></pre>
+<h3>Tips to Avoid Hallucinations 📝🚫</h3>
+<p>To ensure that the AI understands your request, you should:</p>
+<ol>
+<li><strong>Be Specific</strong>: Clearly state what you need.</li>
+<li><strong>Provide Background Information</strong>: Include any relevant details that can help the AI understand the context, remember to use delimiters appropriately.</li>
+<li><strong>Use Examples</strong>: If possible, provide examples to illustrate your point.</li>
+<li><strong>Verify Information</strong>: Always verify the AI's responses with reliable sources.</li>
+<li><strong>Ask the AI</strong> to indicate if it <strong>does not</strong> have enough information to answer your question.</li>
+</ol>
+
+	</div>
+</body>
+
+</html>

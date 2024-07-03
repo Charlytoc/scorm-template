@@ -1,0 +1,73 @@
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>
+	<title>README.es</title>
+	<style type="text/css" media="screen">
+		@import url(../styles/styles.css);
+	</style>
+	<script src="/config/api.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>¿Qué son los &quot;Shots&quot; en la Creación de Prompts? 🎬</h1>
+<p>En el contexto de la IA y el aprendizaje automático, los &quot;shots&quot; se refieren al número de ejemplos proporcionados al modelo para ayudarlo a entender la tarea. Vamos a desglosar los diferentes tipos:</p>
+<h4>Zero-Shot Prompting</h4>
+<p>El zero-shot prompting significa darle a la IA una tarea sin ningún ejemplo. La IA tiene que depender únicamente de su conocimiento preexistente y las instrucciones para generar una respuesta.</p>
+<p><strong>Ejemplo:</strong></p>
+<pre><code class="language-text">Genera un objeto JSON que represente a un usuario
+</code></pre>
+<h4>One-Shot Prompting</h4>
+<p>El one-shot prompting implica proporcionar a la IA un ejemplo para ayudarla a entender mejor la tarea.</p>
+<p><strong>Ejemplo:</strong></p>
+<pre><code class="language-text">Genera un objeto JSON que represente a un usuario
+Ejemplo:
+&quot;&quot;&quot;
+{
+    &quot;nombre&quot;: &quot;Juan Pérez&quot;,
+    &quot;edad&quot;: 30,
+    &quot;correo&quot;: &quot;juan.perez@ejemplo.com&quot;
+  }
+&quot;&quot;&quot;
+</code></pre>
+<blockquote>
+<p><strong>Pista:</strong> Recuerda usar delimitadores 👀.</p>
+</blockquote>
+<h4>Few-Shot Prompting</h4>
+<p>El few-shot prompting significa darle a la IA unos pocos ejemplos para mejorar su comprensión de la tarea.</p>
+<blockquote>
+<p>Nota: En general, para los modelos de lenguage grandes no es necesario darle muchos ejemplos para que comprendan un patrón, usualmente con 2 o 3 ejemplos es suficientes dependiendo de la complejidad de la tarea.</p>
+</blockquote>
+<p><strong>Ejemplo:</strong></p>
+<pre><code class="language-text">Genera un diálogo de película para una comedia romántica. Hay dos personajes, Alicia y Roberto, que son amigos de la infancia y se enamoran.
+
+Ejemplos:
+&lt;Alicia&gt;: Siempre he tenido un crush contigo, Roberto.
+&lt;Roberto&gt;: Nunca lo supe, Alicia. Yo siento lo mismo.
+
+La escena termina con ellos tomados de la mano y mirándose a los ojos.
+</code></pre>
+<h4>Many-Shot Prompting</h4>
+<p>El many-shot prompting implica proporcionar a la IA muchos ejemplos. Esto se usa a menudo cuando la tarea es compleja y requiere más contexto y ejemplos para ser comprendida.</p>
+<h3>Por Qué los Ejemplos Ayudan 🧩</h3>
+<p>Proporcionar ejemplos en los prompts puede mejorar significativamente el rendimiento de la IA. Aquí hay algunas razones por las que:</p>
+<ol>
+<li><strong>Comprensión Contextual:</strong> Los ejemplos le dan a la IA una mejor comprensión de la tarea al proporcionar contexto.</li>
+<li><strong>Reconocimiento de Patrones:</strong> La IA puede reconocer patrones en los ejemplos y aplicarlos para generar respuestas más precisas.</li>
+<li><strong>Reducción de Ambigüedad:</strong> Los ejemplos ayudan a reducir la ambigüedad, facilitando que la IA entienda lo que se espera.</li>
+</ol>
+<h2>PISTAS 🤖</h2>
+<ol>
+<li>Experimenta con diferentes tipos de prompts (zero-shot, one-shot, few-shot y many-shot) usando los ejemplos proporcionados.</li>
+<li>Observa cómo cambian las respuestas de la IA con el número de ejemplos dados.</li>
+<li>Intenta crear tus propios prompts para diferentes tareas y ve cómo afecta la salida el proporcionar ejemplos.</li>
+</ol>
+<p>¡Vamos a poner en práctica lo que has aprendido sobre los &quot;shots&quot; en la creación de prompts! 🚀</p>
+
+	</div>
+</body>
+
+</html>

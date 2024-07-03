@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Course FLask</title>
+    <title>Prompt Engineering Course</title>
     <script src="api.js" type="text/javascript"></script>
     <script type="text/javascript">
         function setIframeHeight(id, navWidth) {
@@ -46,15 +46,13 @@
             );
         }
 
-        var pageArray = new Array(2);
-
-        pageArray[0] = 'resources/01-install-flask/install.html';
-        pageArray[1] = 'resources/02-your-first-endpoint/endpoint.html';
+        var pageArray = ["resources\\00-welcome\\README.es.html","resources\\00-welcome\\README.html","resources\\00.1-brieftly-understand-generative-ai\\README.es.html","resources\\00.1-brieftly-understand-generative-ai\\README.html","resources\\01-what-is-prompting\\README.es.html","resources\\01-what-is-prompting\\README.html","resources\\01.1-obtain-api-key\\README.es.html","resources\\01.1-obtain-api-key\\README.html","resources\\02-write-your-first-prompt-\\README.es.html","resources\\02-write-your-first-prompt-\\README.html","resources\\02.1-importance-of-detailed-instructions\\README.es.html","resources\\02.1-importance-of-detailed-instructions\\README.html","resources\\03-acting-as-an-expert\\README.es.html","resources\\03-acting-as-an-expert\\README.html","resources\\03.1-patient-story\\README.es.html","resources\\03.1-patient-story\\README.html","resources\\04-delimiters-and-how-to-avoid-missunderstanding\\README.es.html","resources\\04-delimiters-and-how-to-avoid-missunderstanding\\README.html","resources\\04.1-fix-the-failing-translation-prompt\\README.es.html","resources\\04.1-fix-the-failing-translation-prompt\\README.html","resources\\05-some-shots-prompts\\README.es.html","resources\\05-some-shots-prompts\\README.html","resources\\05.1-obtaining-a-correct-list-of-products\\README.es.html","resources\\05.1-obtaining-a-correct-list-of-products\\README.html","resources\\06-what-is-context-in-prompting\\README.es.html","resources\\06-what-is-context-in-prompting\\README.html","resources\\06.1-google-algorithm-leak\\README.es.html","resources\\06.1-google-algorithm-leak\\README.html"];
 
         var currentPage = null;
         var startTimeStamp = null;
         var processedUnload = false;
         var reachedEnd = false;
+        var language = 'es';
 
         function doStart() {
             SetupIFrame();
@@ -92,12 +90,16 @@
             var prevButton = document.getElementById('butPrevious');
             var nextButton = document.getElementById('butNext');
 
-            theIframe.src = '../' + pageArray[currentPage];
+            var filteredPages = pageArray.filter(function (page) {
+                return language === 'es' ? page.includes('.es.html') : !page.includes('.es.html');
+            });
+
+            theIframe.src = '../' + filteredPages[currentPage];
 
             if (currentPage == 0) {
                 nextButton.disabled = false;
                 prevButton.disabled = true;
-            } else if (currentPage == pageArray.length - 1) {
+            } else if (currentPage == filteredPages.length - 1) {
                 nextButton.disabled = true;
                 prevButton.disabled = false;
             } else {
@@ -107,7 +109,7 @@
 
             ScormProcessSetValue('cmi.core.lesson_location', currentPage);
 
-            if (currentPage == pageArray.length - 1) {
+            if (currentPage == filteredPages.length - 1) {
                 reachedEnd = true;
                 ScormProcessSetValue('cmi.core.lesson_status', 'completed');
             }
@@ -260,7 +262,49 @@
             }
             return strTemp;
         }
+
+        function changeLanguage() {
+            var langSelect = document.getElementById('languageSelect');
+            language = langSelect.value;
+            currentPage = 0;
+            goToPage();
+        }
     </script>
+    <style>
+        div#navDiv {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #eff1f4;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        div#navDiv input[type="button"] {
+            background-color: #fff;
+            /* color: #007bff; */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        div#navDiv input[type="button"]:hover {
+            background-color: #e0e0e0;
+        }
+
+        div#navDiv select {
+            padding: 10px;
+            border-radius: 4px;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body onload="doStart(false);" onbeforeunload="doUnload(false);" onunload="doUnload();">
@@ -270,6 +314,10 @@
         <input type="button" value="<- Previous" id="butPrevious" onclick="doPrevious();" />
         <input type="button" value="Next ->" id="butNext" onclick="doNext();" />
         <input type="button" value="Exit" id="butExit" onclick="doExit();" />
+        <select id="languageSelect" onchange="changeLanguage();">
+            <option value="es" selected>Español</option>
+            <option value="en">English</option>
+        </select>
     </div>
 </body>
 

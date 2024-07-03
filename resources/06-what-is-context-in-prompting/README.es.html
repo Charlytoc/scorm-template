@@ -1,0 +1,49 @@
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head>
+	<title>README.es</title>
+	<style type="text/css" media="screen">
+		@import url(../styles/styles.css);
+	</style>
+	<script src="/config/api.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h3>Sobre Contexto y Alucinaciones 🧠</h3>
+<p>La importancia del contexto en la creación de prompts es innegable. En esta lección, exploraremos qué es el contexto, cómo proporcionar suficiente contexto para obtener salidas precisas y relevantes de la IA, y cómo evitar <strong>alucinaciones</strong>.</p>
+<h3>Entendiendo el Contexto en la Creación de Prompts 📚</h3>
+<p>El contexto es crucial cuando interactúas con modelos de IA. Ayuda a la IA a entender el trasfondo y los detalles específicos de tu solicitud, lo que lleva a respuestas más precisas y relevantes.</p>
+<p>Si no proporcionas suficiente contexto, la IA podría generar información irrelevante o incorrecta, lo que también puede llevar a alucinaciones donde la IA genera información que no es precisa o relevante.</p>
+<h3>¿Qué son las Alucinaciones? 😵‍💫</h3>
+<p>U️na alucinación ocurre cuando la IA genera información que no es cierta debido a que no tiene suficiente contexto o que en los datos de entrenamiento no se incluye la información específica que estás solicitando.</p>
+<h4>Mal Prompt:</h4>
+<pre><code class="language-text">¿Cuál fue la magnitud del terremoto que ocurrió el 3 de abril de 2024 en Taiwán? ¿Cuántas personas resultaron heridas?
+</code></pre>
+<p>Este prompt carece de contexto y podría llevar a respuestas inexactas o irrelevantes porque los datos de entrenamiento podrían no incluir este evento específico.</p>
+<h4>Buen Prompt:</h4>
+<pre><code class="language-text">¿Cuál fue la magnitud del terremoto que ocurrió el 3 de abril de 2024 en Taiwán? ¿Cuántas personas resultaron heridas?
+
+Contexto de Wikipedia: El 3 de abril de 2024, a las 07:58:11 NST (23:58:11 UTC el 2 de abril), un terremoto de magnitud 7.4 golpeó a 15 km (9.3 mi) al sur de la ciudad de Hualien, en el condado de Hualien, Taiwán. Al menos 18 personas murieron y más de 1,100 resultaron heridas en el terremoto. Es el terremoto más fuerte en Taiwán desde el terremoto de Jiji en 1999, con tres réplicas por encima de magnitud 6.0.
+</code></pre>
+<p>En este prompt, proporcionamos suficiente contexto sobre el terremoto en Taiwán, lo que hará que la respuesta generada no sea un alucinación.</p>
+<h4>Ejemplo de alucinación para el primer prompt:</h4>
+<pre><code class="language-text">La magnitud del terremoto fue de 7.5 en la escala de Richter y resultaron heridas alrededor de 500 personas. 
+</code></pre>
+<h3>Consejos para  evitar alucinaciones 📝🚫</h3>
+<p>Para asegurar que la IA entienda tu solicitud, deberías:</p>
+<ol>
+<li><strong>Ser Específico</strong>: Indica claramente lo que necesitas.</li>
+<li><strong>Proporcionar Información de Fondo</strong>: Incluye cualquier detalle relevante que pueda ayudar a la IA a entender el contexto, recuerda usar delimitadores apropiadamente.</li>
+<li><strong>Usar Ejemplos</strong>: Si es posible, proporciona ejemplos para ilustrar tu punto.</li>
+<li><strong>Verificar la Información</strong>: Siempre verifica las respuestas de la IA con fuentes confiables.</li>
+<li><strong>Pídele a la IA</strong> que te indique si <strong>no</strong> tiene suficiente información para responder tu pregunta.</li>
+</ol>
+
+	</div>
+</body>
+
+</html>
